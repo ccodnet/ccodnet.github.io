@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Zimbora</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Zimbora</strong> by VICI</a>
+					<nav id="nav">
+						<a href="index.html">Início</a>
+						<a href="generic.html">Sobre Nós</a>
+						<a href="elements.html">Oportunidades</a>
+						<a href="contact.html">Contactos</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Bem-vindo ao Zimbora</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<span class="icon fa-user"></span>
+							<h3>Passageiros</h3>
+							<p>Satisfeitos</p>
+						</div>
+
+						<div>
+							<span class="icon fa-map-marker"></span>
+							<h3>Sua Localização</h3>
+							<p onclick="getLocation()", id="gpscoord">Clique aqui! </p>
+						</div>
+
+						<div>
+							<span class="icon fa-car"></span>
+							<h3>Condutores</h3>
+							<p>Profisionais</p>
+						</div>
+
+					</div>
+
+					<footer>
+					<a href="#three" class=" button">Leia Mais</a>
+
+					</footer>
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Sempre Disponível</h3>
+							</header>
+
+							<p>Seja para lazer ou negócios, nós  procuramos <br>providenciar serviços de qualidade e selecionar <br>as viaturas que melhor respondem às suas necessidades.<p>
+
+							<footer>
+								<a href="#" class="button">Saiba Mais</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Segurança Rodoviária</h3>
+							</header>
+
+							<p>Os nossos conductores primam pela segurança dos nossos <br> passageiros em todo momento. Cada cliente tem acesso a carros <br>em bom estado de conservação e condutores qualificados.</p>
+
+							<footer>
+								<a href="#" class="button">Saiba Mais</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Contacte-nos</h3>
+
+					<form action="http://formspree.io/celso_osmar16@hotmail.com" method="post">
+
+						<div class="field half first">
+							<label for="name">Nome</label>
+							<input name="name" id="name" type="text" placeholder="Nome">
+						</div>
+
+						<div class="field half ">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+
+						<div class="field half first">
+							<label for="name">Destino</label>
+							<input name="destino" id="destino" type="text" placeholder="Destino">
+						</div>
+
+
+						<div class="field half">
+							<label for="name">Origem</label>
+							<input name="origem" id="origem" type="text" placeholder="Origem">
+						</div>
+
+						<div class="field">
+							<label for="message">Mensage</label>
+							<textarea name="message" id="message" rows="6" placeholder="Envie-nos a sua mensagem"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Enviar" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+<!--					<h4>Icons</h4>								-->
+											<ul class="icons">
+												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+												<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+											</ul>
+
+					<div class="copyright">
+						&copy; Zimbora by VICI <a href="https://templated.co"></a>
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script> 
+			var x = document.getElementById("gpscoord");
+
+			function getLocation() {
+    		if (navigator.geolocation) {
+        		navigator.geolocation.getCurrentPosition(showPosition);
+    		} else { 
+       			 x.innerHTML = "Geolocation is not supported by this browser.";
+    				}
+			}
+
+			function showPosition(position) {
+    			x.innerHTML = "Latitude: " + position.coords.latitude + 
+    			"<br>Longitude: " + position.coords.longitude;
+			}
+			</script>
+
+			<!---http://stackoverflow.com/questions/3305225/real-time-gps-tracker-on-just-html-js-and-google-maps-to-be-run-on-a-handphone !>
+
+	</body>
+</html>
