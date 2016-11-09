@@ -9,8 +9,7 @@
 		<title>Zimbora</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="main.css" />
-		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
 
@@ -22,6 +21,7 @@
 						<a href="index.html">Início</a>
 						<a href="generic.html">Sobre Nós</a>
 						<a href="elements.html">Oportunidades</a>
+						<a href="contact.html">Contactos</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -70,7 +70,7 @@
 					<div class="flex flex-2">
 						<article>
 							<div class="image round">
-								<img src="pic01.jpg" alt="Pic 01" />
+								<img src="images/pic04.jpg" alt="Pic 04" />
 							</div>
 							<header>
 								<h3>Sempre Disponível</h3>
@@ -84,7 +84,7 @@
 						</article>
 						<article>
 							<div class="image round">
-								<img src="pic02.jpg" alt="Pic 02" />
+								<img src="images/pic02.jpg" alt="Pic 02" />
 							</div>
 							<header>
 								<h3>Segurança Rodoviária</h3>
@@ -98,7 +98,8 @@
 						</article>
 					</div>
 				</div>
-				
+			</section>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -106,8 +107,7 @@
 					<h3>Contacte-nos</h3>
 
 					<form id="contactform" method="POST">
-						<input type="hidden" name="_subject" value="wwwccodnet.github.io" />
-						
+
 						<div class="field half first">
 							<label for="name">Nome</label>
 							<input name="name" id="name" type="text" placeholder="Nome">
@@ -134,17 +134,17 @@
 							<textarea name="message" id="message" rows="6" placeholder="Envie-nos a sua mensagem"></textarea>
 						</div>
 						<ul class="actions">
+							<input type="hidden" name="_subject" value="www.ccodnet.github.io"/>
 							<input type="text" name="_gotcha" style="display:none" />
-							<li><input value="Enviar" onclick="window.location.href='www.ccodnet.github.io'" class="button alt" type="submit"></li>
+							<li><input value="Enviar" class="button alt" type="submit"></li>
 						</ul>
 					</form>
 
- 
-
 		<script>
-    		var contactform =  document.getElementById('contactform');
-    		contactform.setAttribute('action', '//formspree.io/' + 'celso_osmar16' + '@' + 'hotmail' + '.' + 'com');
+    	var contactform =  document.getElementById('contactform');
+    	contactform.setAttribute('action', '//formspree.io/' + 'celso_osmar16' + '@' + 'hotmail' + '.' + 'com');
 		</script>
+
 <!--					<h4>Icons</h4>								-->
 											<ul class="icons">
 												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -163,10 +163,10 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="jquery.min.js"></script>
-			<script src="skel.min.js"></script>
-			<script src="util.js"></script>
-			<script src="main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 			<script> 
 			var x = document.getElementById("gpscoord");
