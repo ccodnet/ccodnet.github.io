@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Projection by TEMPLATED</title>
+		<title>Zimbora</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,9 +20,9 @@
 					<nav id="nav">
 						<a href="index.html">Início</a>
 						<a href="sobreNos.html">Sobre Nós</a>
+<!--						<a href="blog.html">Blog</a>
 						<a href="oportunidades.html">Oportunidades</a>
-						<a href="#three">Contactos</a>
-					</nav>
+-->					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
@@ -50,6 +50,48 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
+
+
+					<h3>Contacte-nos</h3>
+
+					<form id="contactform" method="POST">
+
+						<div class="field half first">
+							<label for="name">Nome</label>
+							<input name="name" id="name" type="text" placeholder="Nome">
+						</div>
+
+						<div class="field half ">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+
+						<div class="field half first">
+							<label for="name">Destino</label>
+							<input name="destino" id="destino" type="text" placeholder="Destino">
+						</div>
+
+
+						<div class="field half">
+							<label for="name">Origem</label>
+							<input name="origem" id="origem" type="text" placeholder="Origem">
+						</div>
+
+						<div class="field">
+							<label for="message">Mensage</label>
+							<textarea name="message" id="message" rows="6" placeholder="Envie-nos a sua mensagem"></textarea>
+						</div>
+						<ul class="actions">
+							<input type="hidden" name="_subject" value="www.ccodnet.github.io"/>
+							<input type="text" name="_gotcha" style="display:none" />
+							<li><input value="Enviar" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+		<script>
+    	var contactform =  document.getElementById('contactform');
+    	contactform.setAttribute('action', '//formspree.io/' + 'celso_osmar16' + '@' + 'hotmail' + '.' + 'com');
+		</script>
 
 <!--					<h4>Icons</h4>								-->
 											<ul class="icons">
